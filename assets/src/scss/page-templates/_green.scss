@@ -1,0 +1,49 @@
+.green {
+  background-color: $primary-color;
+  &__row {
+    @include flex-grid-row();
+    min-height: 335px;
+
+  }
+  &__cool {
+    @include flex-grid-column(6);
+    margin-top: 50px;
+    &--title {
+      @include creative-title();
+      color: $secondary-color;
+    }
+    &--button {
+      background-color: #ffffff;
+      color: $primary-color;
+      height: 52px;
+      width: 165px;
+    }
+
+  }
+  &__white {
+    @include flex-grid-column(6);
+    margin-top: 50px;
+
+    &--block {
+      min-height: 230px;
+      background-color: #fff;
+      &-title {
+        @include flex-grid-column(10);
+        @include creative-title();
+        font-size: 20px;
+      }
+      &-wrap {
+        @include flex-grid-column(11);
+      }
+      &-paragraph {
+        @include flex-grid-column(10);
+      }
+      &-email {
+       font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+}
