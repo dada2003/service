@@ -8,4 +8,7 @@ $body-font-family: 'Open Sans', sans-serif;
 
 //fontavesome
 $fa-var-check-square-o: "D:\service-foundation\assets\components\font-awesome\scss\_icons.scss";
-@import "../../components/font-awesome/scss/icons";
+@import "../../components/font-awesome/scss/variables";
+
+//iconions
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');

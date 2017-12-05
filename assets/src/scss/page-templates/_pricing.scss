@@ -1,0 +1,35 @@
+.pricing {
+  &__row {
+    @include flex-grid-row()
+  }
+  &__title {
+    @include flex-grid-column(12);
+    @include creative-title;
+    text-align: center;
+    &::before {
+      @include green-before();
+    }
+  }
+  &__description {
+    text-align: center;
+  }
+  &__product {
+    @include flex-grid-column(4);
+    &-list {
+      list-style: none;
+      padding: 0;
+    }
+    &--b {
+      width: 165px;
+      height: 30px;
+      background-color: #7beec7;
+      text-align: center;
+      &__link {
+        color: white;
+      }
+    }
+    &--subtitle {
+      @include creative-title();
+    }
+  }
+}
