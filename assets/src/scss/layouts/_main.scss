@@ -1,0 +1,34 @@
+.workspace {
+  margin-bottom: 150px;
+  &__row {
+    @include flex-grid-row();
+  }
+  &__title {
+    @include flex-grid-column(12);
+    @include creative-title;
+    text-align: center;
+    &::before {
+      @include green-before;
+    }
+  }
+  &__description {
+    @include flex-grid-column(12);
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__wrap {
+    @include flex-grid-column(6)
+  }
+  &__paragraph {
+    @include flex-grid-column(12)
+  }
+  &__list {
+    @include flex-grid-column();
+    list-style: none;
+    padding: 0;
+    &--item {
+    &__photo {
+      @include flex-grid-column(6)
+    }
+  }
+}

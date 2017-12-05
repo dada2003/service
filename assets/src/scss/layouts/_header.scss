@@ -1,0 +1,45 @@
+.header {
+  padding-top: 50px;
+  min-height: 100vh;
+  background-image: url(../../../images/layer-4.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 150px;
+
+  &__row {
+    @include flex-grid-row();
+   min-height: 100vh;
+  }
+  &__logo {
+    @include flex-grid-column(6);
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  &__nav {
+    @include flex-grid-column(6);
+  }
+  &__title {
+    @include flex-grid-column(12);
+    @include creative-title;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  &__cramps {
+    @include flex-grid-column();
+    @include breadcrumbs-container;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    color: #60606e;
+
+
+  }
+}
+

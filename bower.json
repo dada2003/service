@@ -1,0 +1,19 @@
+{
+  "name": "service",
+  "description": "foundation project",
+  "main": "gulpfile.js",
+  "author": "anton",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1",
+    "foundation-sites": "^6.4.3"
+  },
+  "devDependencies": {
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
