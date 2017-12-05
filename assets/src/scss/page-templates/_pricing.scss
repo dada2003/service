@@ -3,6 +3,7 @@
     @include flex-grid-row()
   }
   &__title {
+
     @include flex-grid-column(12);
     @include creative-title;
     text-align: center;
@@ -12,14 +13,30 @@
   }
   &__description {
     text-align: center;
+    margin-bottom: 110px;
+  }
+  &__wrap {
+    margin-bottom:150px;
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   &__product {
-    @include flex-grid-column(4);
+    @include flex-grid-column(3.8);
+    border-top: 2px solid $primary-color;
+    &:hover{
+      outline: 2px solid $primary-color;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+    }
     &-list {
+      margin-bottom: 50px;
       list-style: none;
       padding: 0;
     }
     &--b {
+      margin-bottom: 50px;
       width: 165px;
       height: 30px;
       background-color: #7beec7;
@@ -30,6 +47,13 @@
     }
     &--subtitle {
       @include creative-title();
+      padding-bottom: 20px;
+    }
+  }
+  &__button {
+    background-color: $primary-green;
+    &:hover {
+      background-color: $primary-green;
     }
   }
 }
