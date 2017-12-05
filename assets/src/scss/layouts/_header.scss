@@ -9,7 +9,7 @@
 
   &__row {
     @include flex-grid-row();
-   min-height: 100vh;
+   min-height: 80vh;
   }
   &__logo {
     @include flex-grid-column(6);
