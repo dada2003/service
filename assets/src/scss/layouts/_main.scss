@@ -26,9 +26,9 @@
     @include flex-grid-column();
     list-style: none;
     padding: 0;
-    //&--item {
-    //  @import('$fa-check-square-o');
-    //  }
+    &--item .fa {
+      background-color: $primary-color;
+    }
     }
     &__photo {
       @include flex-grid-column(6)
